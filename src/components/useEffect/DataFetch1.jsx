@@ -11,6 +11,7 @@ const DataFetch1 = () => {
         console.log(users);
         setData(users);
     }
+    
     useEffect(() => {
         getData();
     }, [])
