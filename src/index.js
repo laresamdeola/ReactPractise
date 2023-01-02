@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import AddListItems from "./components/controlled-inputs/AddListItems";
+import AddItems2 from "./components/useReducer/AddItems2";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<AddListItems />);
+root.render(<AddItems2 />);
