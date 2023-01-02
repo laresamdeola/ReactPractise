@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import AddItems2 from "./components/useReducer/AddItems2";
+import FavoritePoets3 from "./components/useReducer/FavoritePoets3";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<AddItems2 />);
+root.render(<FavoritePoets3 />);
