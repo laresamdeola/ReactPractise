@@ -22,7 +22,7 @@ const FavoritePoets3 = () => {
                 poets3: newPoets3,
                 isPoet3ModalOpen: true,
                 poet3ModalContents: "Added New Poet",
-                hasAlert: true
+                hasAlert: false
             }
         }
         
@@ -30,6 +30,15 @@ const FavoritePoets3 = () => {
             return {
                 ...state,
                 isPoet3ModalOpen: false
+            }
+        }
+        
+        if(action.type === "REMOVE_POET_3"){
+            const filtered_poet_3 = state.poets3.filter((poet3) => poet3.id !== action.payload);
+            return {
+                ...state,
+                poets3: filtered_poet_3,
+                poet3ModalContents: `Removed ${state.name}`
             }
         }
         
@@ -67,7 +76,7 @@ const FavoritePoets3 = () => {
     
     return (
         <>
-            {state.isPoet3ModalOpen && <Poets3Modal closePoets3Modal={closePoets3Modal}/>}
+            {state.isPoet3ModalOpen && <Poets3Modal poet3ModalContents={state.poet3ModalContents} closePoets3Modal={closePoets3Modal}/>}
             <form onSubmit={handlePoets3}>
                 <label htmlFor="name">Name: </label>
                 <br />
@@ -107,6 +116,19 @@ const FavoritePoets3 = () => {
                 <br />
                 <button type="submit">Add</button>
             </form>
+            {state.poets3.map((poet3) => {
+                const {id, name, genre, country, age} = poet3;
+                
+                return (
+                    <div key={id}>
+                        <h3>{name}</h3>
+                        <h3>{genre}</h3>
+                        <h3>{country}</h3>
+                        <h3>{age}</h3>
+                        <button onClick={() => dispatch({type: "REMOVE_POET_3", payload: id})}>remove</button>
+                    </div>
+                )
+            })}
         </>
     )
 }
