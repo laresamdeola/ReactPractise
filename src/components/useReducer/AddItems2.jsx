@@ -25,6 +25,7 @@ const AddItems2 = () => {
         }
         
         dispatch({type: "ADD_ITEM", payload: newItem});
+        setName("");
     }
   };
 

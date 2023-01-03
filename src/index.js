@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import AddItems2 from "./components/useReducer/AddItems2";
+import FetchExample from "./components/customhooks/FetchExample";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<AddItems2 />);
+root.render(<FetchExample />);

@@ -15,7 +15,7 @@ const reducer = (state, action) => {
           const filtered = state.people.filter((person) => person.id !== action.payload)
           return (
               {
-                  ..state,
+                  ...state,
                   people: filtered, 
                   isShowModal: true,
                   modalContent: "Item Removed"
