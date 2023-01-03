@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import FavoritePoets3 from "./components/useReducer/FavoritePoets3";
+import FetchExample from "./components/customhooks/FetchExample";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<FavoritePoets3 />);
+root.render(<FetchExample />);
