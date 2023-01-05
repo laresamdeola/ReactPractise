@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import ModalExample from "./components/customhooks/ModalExample";
+import ReduceExample1 from "./components/useReducer/ReduceExample1";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<ModalExample />);
+root.render(<ReduceExample1 />);
