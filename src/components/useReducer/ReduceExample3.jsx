@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from "react";
+import ReduceModal3 from "./ReduceModal3";
 
 const ReduceExample3 = () => {
   const [name, setName] = useState("");
@@ -20,7 +21,7 @@ const ReduceExample3 = () => {
         ...state,
         poets: newPoets,
         isModalOpen: true,
-        modalContents: `${name} has been added`,
+        modalContents: ` has been added`,
       };
     }
 
@@ -50,6 +51,9 @@ const ReduceExample3 = () => {
 
   return (
     <>
+      {state.isModalOpen && (
+        <ReduceModal3 modalContents={state.modalContents} name={name} />
+      )}
       <form onSubmit={handleForm}>
         <label htmlFor="name">Name: </label>
         <input
