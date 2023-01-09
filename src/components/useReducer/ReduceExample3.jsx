@@ -47,7 +47,7 @@ const ReduceExample3 = () => {
     setWriting("");
     setIsAlive("");
     console.log(`${name} has been added`);
-  };
+  };.jsx..
 
   return (
     <>
