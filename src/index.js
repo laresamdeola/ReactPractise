@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import ReduceExample4 from "./components/useReducer/ReduceExample4";
+import ReduceExample5 from "./components/useReducer/ReduceExample5";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<ReduceExample4 />);
+root.render(<ReduceExample5 />);
