@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from "react";
+import ReduceModal5 from "./ReduceModal5";
 
 const ReduceExample5 = () => {
   const [name, setName] = useState("");
@@ -20,7 +21,13 @@ const ReduceExample5 = () => {
         ...state,
         poets: newPoets5,
         isModalOpen5: true,
-        modalContents5: "New Poet added",
+        modalContents5: `${action.payload.name} has been added`,
+      };
+    }
+    if (action.type === "CLOSE_MODAL") {
+      return {
+        ...state,
+        isModalOpen5: false,
       };
     }
     return state;
@@ -47,8 +54,18 @@ const ReduceExample5 = () => {
     console.log(`${newPoet5.name} has been added`);
   };
 
+  const closeModal = () => {
+    dispatch({ type: "CLOSE_MODAL" });
+  };
+
   return (
     <>
+      {state.isModalOpen5 && (
+        <ReduceModal5
+          modalContents={state.modalContents5}
+          closeModal={closeModal}
+        />
+      )}
       <form onSubmit={handleForm5}>
         <label htmlFor="name">Name: </label>
         <input
