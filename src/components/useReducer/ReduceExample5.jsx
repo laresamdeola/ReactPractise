@@ -21,7 +21,7 @@ const ReduceExample5 = () => {
         ...state,
         poets: newPoets5,
         isModalOpen5: true,
-        modalContents5: "New Poet added",
+        modalContents5: `${action.payload.name} has been added`,
       };
     }
     if (action.type === "CLOSE_MODAL") {
