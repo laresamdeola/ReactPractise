@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Components } from "./components/lessons/components";
+import { CssExternal } from "./components/lessons/CssExternal";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Components />);
+root.render(<CssExternal />);
