@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Poets2 } from "./components/lessons/propsdestructuring";
+import { Children } from "./components/lessons/propschildren";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Poets2 />);
+root.render(<Children />);
