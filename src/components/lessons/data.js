@@ -22,4 +22,4 @@ const poets = [
   },
 ];
 
-export default poets;
+export { poets };

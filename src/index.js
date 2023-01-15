@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Children } from "./components/lessons/propschildren";
+import { KeyAndSpread } from "./components/lessons/keypropandspreadoperator";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Children />);
+root.render(<KeyAndSpread />);
