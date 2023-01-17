@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { ObjectExample } from "./components/lessons/usestateobject";
+import { MultipleState } from "./components/lessons/usestatemultiplestatevalues";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<ObjectExample />);
+root.render(<MultipleState />);
