@@ -27,6 +27,13 @@ const Counter = () => {
       >
         reset
       </button>
+      <button
+        onClick={() => {
+          setCount(count * 2);
+        }}
+      >
+        double
+      </button>
     </div>
   );
 };
