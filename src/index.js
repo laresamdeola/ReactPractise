@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { ObjectExample } from "./components/lessons/usestateobject";
+import { Counter } from "./components/lessons/counter";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<ObjectExample />);
+root.render(<Counter />);
