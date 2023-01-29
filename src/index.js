@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Conditional4 } from "./components/lessons/useeffectconditional4";
+import { FetchData } from "./components/lessons/useeffectfetchdata";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Conditional4 />);
+root.render(<FetchData />);
