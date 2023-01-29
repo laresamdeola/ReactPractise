@@ -8,15 +8,17 @@ const FetchData = () => {
 
   return (
     <>
-      {data.map((datum) => {
-        const { id, login, avatar_url } = datum;
-        return (
-          <div key={id}>
-            <h3>{login}</h3>
-            <img src={avatar_url} alt={login} />
-          </div>
-        );
-      })}
+      {!isLoading
+        ? data.map((datum) => {
+            const { id, login, avatar_url } = datum;
+            return (
+              <div key={id}>
+                <h3>{login}</h3>
+                <img src={avatar_url} alt={login} />
+              </div>
+            );
+          })
+        : alert("data is loading")}
     </>
   );
 };
