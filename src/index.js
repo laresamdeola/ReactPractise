@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Ternary } from "./components/lessons/ternaryoperator";
+import { ShowAndHide } from "./components/lessons/showorhidecomponents";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Ternary />);
+root.render(<ShowAndHide />);
