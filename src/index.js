@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { MultipleReturnsFetch } from "./components/lessons/multiplereturnsfetchdata";
+import { Ternary } from "./components/lessons/ternaryoperator";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<MultipleReturnsFetch />);
+root.render(<Ternary />);
