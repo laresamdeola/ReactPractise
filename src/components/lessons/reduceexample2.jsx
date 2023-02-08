@@ -6,16 +6,16 @@ const ReduceExample2 = () => {
   const [address, setAddress] = useState("");
 
   const defaultItems = {
-    item: [],
+    items: [],
     itemMessage: "",
   };
 
   const reduce = (state, action) => {
     if (action.type === "ADD_PERSON") {
-      const newItems = [...state.item, action.payload];
+      const newItems = [...state.items, action.payload];
       return {
         ...state,
-        item: newItems,
+        items: newItems,
         itemMessage: "New Person added",
       };
     }
