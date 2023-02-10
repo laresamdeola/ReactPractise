@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 
 const ReduceExample4 = () => {
   const [formInputs, setFormInputs] = useState({
@@ -9,14 +9,31 @@ const ReduceExample4 = () => {
 
   const { nameInput, ageInput, addressInput } = formInputs;
 
-  console.log(nameInput);
-
   const defaultItems = {
     people: [],
     actionMessage: "",
   };
 
-  const reduce = (state, action) => {};
+  const reduce = (state, action) => {
+    if (action.type === "ADD_PERSON") {
+      const newPeople = [...state.people, action.payload];
+      return {
+        ...state,
+        people: newPeople,
+        actionMessage: `${action.payload.name} has been added`,
+      };
+    }
+    if (action.type === "REMOVE_PERSON") {
+      const [id, name] = action.payload;
+      const filteredPeople = state.people.filter((person) => person.id !== id);
+      return {
+        ...state,
+        people: filteredPeople,
+        actionMessage: `${name} has been removed`,
+      };
+    }
+    return state;
+  };
 
   const [state, dispatch] = useReducer(reduce, defaultItems);
 
@@ -49,6 +66,14 @@ const ReduceExample4 = () => {
 
   const handleForm = (event) => {
     event.preventDefault();
+    const newPerson = {
+      id: new Date().getTime().toString(),
+      name: nameInput,
+      age: ageInput,
+      address: addressInput,
+    };
+    dispatch({ type: "ADD_PERSON", payload: newPerson });
+    console.log(state.actionMessage);
   };
 
   return (
@@ -81,6 +106,24 @@ const ReduceExample4 = () => {
         <br />
         <button type="submit">Add Person</button>
       </form>
+      {state.people.map((person) => {
+        const { id, name, age, address } = person;
+        return (
+          <section key={id}>
+            <h3>{name}</h3>
+            <h3>{age}</h3>
+            <h3>{address}</h3>
+            <button
+              onClick={() => {
+                dispatch({ type: "REMOVE_PERSON", payload: [id, name] });
+                console.log(state.actionMessage);
+              }}
+            >
+              remove
+            </button>
+          </section>
+        );
+      })}
     </div>
   );
 };
