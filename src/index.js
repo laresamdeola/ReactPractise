@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { ReduceExample2 } from "./components/lessons/reduceexample2";
+import { ReduceExample4 } from "./components/lessons/reduceexample4";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<ReduceExample2 />);
+root.render(<ReduceExample4 />);
