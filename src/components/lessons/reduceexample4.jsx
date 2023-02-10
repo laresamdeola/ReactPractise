@@ -1,13 +1,15 @@
-import React, { useState, useReducer } from "react";
+import React, { useState } from "react";
 
 const ReduceExample4 = () => {
   const [formInputs, setFormInputs] = useState({
-    nameInput: "",
+    nameInput: "hello",
     ageInput: "",
     addressInput: "",
   });
 
   const { nameInput, ageInput, addressInput } = formInputs;
+
+  console.log(nameInput);
 
   const defaultItems = {
     people: [],
@@ -18,8 +20,8 @@ const ReduceExample4 = () => {
 
   const [state, dispatch] = useReducer(reduce, defaultItems);
 
-  const nameInputHandler = (prevState) => {
-    setFormInputs((event) => {
+  const nameInputHandler = (event) => {
+    setFormInputs((prevState) => {
       return {
         ...prevState,
         nameInput: event.target.value,
@@ -27,24 +29,32 @@ const ReduceExample4 = () => {
     });
   };
 
-  const ageInputHandler = (prevState, event) => {
-    return {
-      ...prevState,
-      ageInput: event.target.value,
-    };
+  const ageInputHandler = (event) => {
+    setFormInputs((prevState) => {
+      return {
+        ...prevState,
+        ageInput: event.target.value,
+      };
+    });
   };
 
-  const addressInputHandler = (prevState, event) => {
-    return {
-      ...prevState,
-      addressInput: event.target.value,
-    };
+  const addressInputHandler = (event) => {
+    setFormInputs((prevState) => {
+      return {
+        ...prevState,
+        addressInput: event.target.value,
+      };
+    });
+  };
+
+  const handleForm = (event) => {
+    event.preventDefault();
   };
 
   return (
     <div>
       <h1>Hello World</h1>
-      <form>
+      <form onSubmit={handleForm}>
         <label htmlFor="name">Name: </label>
         <input
           type="text"
@@ -69,6 +79,7 @@ const ReduceExample4 = () => {
           onChange={addressInputHandler}
         />
         <br />
+        <button type="submit">Add Person</button>
       </form>
     </div>
   );
