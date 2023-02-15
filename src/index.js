@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { FetchData } from "./components/lessons/useeffectfetchdata";
+import { ReduceExample4 } from "./components/lessons/reduceexample4";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<FetchData />);
+root.render(<ReduceExample4 />);
