@@ -7,6 +7,8 @@ const Biography = () => {
   // Honours
   // Bibliography
 
+  let title = "Obafemi Awolowo";
+
   const Structure = (content, functionName) => {
     return (
       <div>
@@ -43,6 +45,7 @@ const Biography = () => {
 
   return (
     <>
+      <h1>{title}</h1>
       <Introduction />
       <EarlyLife />
       <Life />
