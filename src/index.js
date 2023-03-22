@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Biography } from "./components/lessons2/c-nestedcomponents";
+import { External } from "./components/lessons2/f-jsxjavascript";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Biography />);
+root.render(<External />);
