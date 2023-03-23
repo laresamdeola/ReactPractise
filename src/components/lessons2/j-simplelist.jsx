@@ -1,6 +1,3 @@
-// Continue from here
-// use map here - create a list then loop through using map
-
 import React from "react";
 
 const SimpleList = () => {
