@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { ProperList } from "./components/lessons2/k-properlist";
+import { SpreadOperator } from "./components/lessons2/m-spreadoperator";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<ProperList />);
+root.render(<SpreadOperator />);
