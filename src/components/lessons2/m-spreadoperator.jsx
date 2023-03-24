@@ -1,40 +1,45 @@
 import React from "react";
 
+const artists = [
+  {
+    id: 1,
+    genre: "New World",
+    artistName: "Enya",
+    imageURL: "",
+  },
+  {
+    id: 2,
+    genre: "Afrobeat",
+    artistName: "Fela",
+    imageURL: "",
+  },
+  {
+    id: 3,
+    genre: "Reggae",
+    artistName: "Bob Marley",
+    imageURL: "",
+  },
+  {
+    id: 4,
+    genre: "Funk",
+    artistName: "James Brown",
+    imageURL: "",
+  },
+];
+
+const Artist = (props) => {
+  const { id, genre, artistName, imageURL } = props;
+  return (
+    <section key={id}>
+      <h2>{artistName}</h2>
+      <h3>{genre}</h3>
+      <img src={imageURL} alt={artistName} />
+      <br />
+    </section>
+  );
+};
+
 const SpreadOperator = () => {
-  const artists = [
-    {
-      id: 1,
-      genre: "New World",
-      artistName: "Enya",
-    },
-    {
-      id: 2,
-      genre: "Afrobeat",
-      artistName: "Fela",
-    },
-    {
-      id: 3,
-      genre: "Reggae",
-      artistName: "Bob Marley",
-    },
-    {
-      id: 4,
-      genre: "Funk",
-      artistName: "James Brown",
-    },
-  ];
-
-  const Artist = (props) => {
-    const { id, genre, artistName } = props;
-    return (
-      <section key={id}>
-        <h2>{artistName}</h2>
-        <h3>{genre}</h3>
-        <br />
-      </section>
-    );
-  };
-
   return (
     <div>
       {artists.map((artist) => {
@@ -44,4 +49,4 @@ const SpreadOperator = () => {
   );
 };
 
-export { SpreadOperator };
+export { SpreadOperator, artists, Artist };

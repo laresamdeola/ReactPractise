@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { SpreadOperator } from "./components/lessons2/m-spreadoperator";
+import { EventBasics } from "./components/lessons2/n-eventbasics";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<SpreadOperator />);
+root.render(<EventBasics />);
