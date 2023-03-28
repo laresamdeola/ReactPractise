@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { UseEffectBasics } from "./components/lessons2/t-useeffectbasics";
+import { FetchData } from "./components/lessons2/w-fetchdata";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<UseEffectBasics />);
+root.render(<FetchData />);
