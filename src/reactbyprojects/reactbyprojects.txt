@@ -1,0 +1,68 @@
+1. Simple Profile Page
+ - JSX
+ - DEvelopment Environment
+ - JSX Rules
+ - Components
+ - Nested Components
+ 
+2. Adding Colors & Style
+ - CSS Basics
+ - Inline CSS
+ - Internal CSS via Object
+ - External CSS
+ 
+3. Adding Functionality I - Date
+ - Javascript Date Object
+ - Props
+ - Props Destructuring
+ 
+4. Adding Functionality II - Forms
+ - Basic Forms in React
+ - OnChange Attribute
+ - Controlled Inputs
+ - Uncontrolled Inputs
+ 
+5. Adding Functionality III - Save the Form in a txt file
+ - Import Statement
+ - Export Statement - Default & Named Export
+ - Making your React Code Modular
+ 
+6. Random Pet Names Generator Site
+ - Components Again
+ - Modular Code Again
+ - Import & Export Statement Again
+ - Introduction to Hooks
+ - useState Hook - Array
+ - useState Hook - Object
+ - useState Hook - Multiple State Values
+ - Creating an internal API
+ - Introduction to Higher Order Functions
+   - map()
+   - filter()
+   - reduce()
+   - find()
+   - findIndex()
+ - Fetching data from the internal API
+  
+7. Pets Needing Shelter
+ - Introduction to Hooks II
+  - useEffect()
+  - Basics of useEffect()
+  - useEffect() Conditional
+  - useEffect() Dependency List
+  - Fetching Data with useEffect()
+  - Handling Null State gracefully
+  
+8. News Site
+ - Combining different Hooks
+ - useState() for dynamic variables
+ - useEffect() for side effects or concurrent operations
+ - Ternary Operator for Conditional Redering I
+ - Ternary Operator for Conditional Rendering II
+ - Introduction to Short Circuit Evaluation
+ - Showing/Hiding User Interface Elements
+ 
+9. Love Names Site - building your API
+10. Cryptocurrency Latest Price.
+11. Language Translator Site
+12. 

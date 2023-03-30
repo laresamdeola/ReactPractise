@@ -1,6 +1,0 @@
-1. Simple Profile Page
-2. Adding Colors & Style
-3. Adding Functionality I - Date
-4. Adding Functionality II - Forms
-5. Adding Functionality III - Save the Form in a txt file
-6. 
