@@ -1,4 +1,5 @@
 1. Simple Profile Page
+ - Project - Biography Page
  - JSX
  - DEvelopment Environment
  - JSX Rules
@@ -6,6 +7,7 @@
  - Nested Components
  
 2. Adding Colors & Style
+ - Project - Animation Library I
  - CSS Basics
  - Inline CSS
  - Internal CSS via Object
@@ -17,6 +19,7 @@
  - Props Destructuring
  
 4. Adding Functionality II - Forms
+ - Project: Animation Library II
  - Basic Forms in React
  - OnChange Attribute
  - Controlled Inputs

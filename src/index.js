@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Biography } from "./reactbyprojects/Chapter 1/ProfilePage2";
+import { HoverCSS } from "./reactbyprojects/Chapter 2/HoverCSS";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Biography />);
+root.render(<HoverCSS />);
