@@ -53,6 +53,7 @@ const Biography = () => {
         return (
             <section>
                 <div>
+                    <h3>{Introduction.name.toUpperCase()}</h3>
                    <h1>{name}</h1>
                     <p>{summary}</p> 
                 </div>
@@ -64,6 +65,7 @@ const Biography = () => {
         return (
             <section>
                 <div>
+                    <h3>{EarlyLife.name.toUpperCase()}</h3>
                     <h3>{earlyLife}</h3>
                     <p>{earlyLifeContent}</p>
                 </div>
