@@ -14,8 +14,8 @@
 // 4. Functionality to copy this code
 
 // External CSS - done
-// Inline CSS - Smaller Version of the HoverCSS Library
-// Internal/Object CSS - Medium Sized Version of the HoverCSS Library
+// Inline CSS - Color Library - AwoCSS (Aah-WOH)
+// Internal/Object CSS - Animation Library - EreCSS (Hey-Ray)
 
 import React from "react";
 import "./hovercss.css";
@@ -31,6 +31,7 @@ const HoverCSS = () => {
         
         return (
             <div>
+                <h2 className="hover-letter-spacing">HoverCSS</h2><br />
                 <ul className="list-elements">
                     <li className="hover-color">{name} <br/> 
                         <button onClick={() => showHoverStyle(`.hover-color:hover {
