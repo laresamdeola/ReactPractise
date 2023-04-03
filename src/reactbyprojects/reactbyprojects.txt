@@ -1,4 +1,4 @@
-1. Simple Profile Page
+1. Simple Profile Page - Done
  - Project - Biography Page
  - JSX
  - DEvelopment Environment
@@ -6,16 +6,20 @@
  - Components
  - Nested Components
  
-2. Adding Colors & Style
- - Project - Animation Library I
+2. Adding Colors & Style - Done
+ - Project - Color Palette Library
  - CSS Basics
  - Inline CSS
  - Internal CSS via Object
  - External CSS
  
 3. Adding Functionality I - Date
+ - Project - HelloWorld (a site where Hello World is written in various programming languages)
  - Javascript Date Object
- - Props
+ - Props - Simple Props
+ - Brief Introduction to Hooks
+ - Props II - Using an Internal API
+ - Props Children
  - Props Destructuring
  
 4. Adding Functionality II - Forms

@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Awo } from "./reactbyprojects/Chapter 2/Inline CSS/AwoCSS";
+import { HelloWorld } from "./reactbyprojects/Chapter 3/HelloWorld";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Awo />);
+root.render(<HelloWorld />);
