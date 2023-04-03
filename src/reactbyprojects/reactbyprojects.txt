@@ -13,23 +13,23 @@
  - Internal CSS via Object
  - External CSS
  
-3. Adding Functionality I - Date
+3. Props
  - Project - HelloWorld (a site where Hello World is written in various programming languages)
  - Javascript Date Object
  - Props - Simple Props
  - Brief Introduction to Hooks
  - Props II - Using an Internal API
  - Props Children - Not Done
- - Props Destructuring
+ - Props Destructuring - Done
  
-4. Adding Functionality II - Forms
- - Project: Animation Library II
+4. Forms
+ - Project: Country Quiz (called Patriot) - Continue from here
  - Basic Forms in React
  - OnChange Attribute
  - Controlled Inputs
  - Uncontrolled Inputs
  
-5. Adding Functionality III - Save the Form in a txt file
+5. Adding Functionality III - Save the score in a txt file
  - Import Statement
  - Export Statement - Default & Named Export
  - Making your React Code Modular
