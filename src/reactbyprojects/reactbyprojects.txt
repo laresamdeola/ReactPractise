@@ -23,7 +23,7 @@
  - Props Destructuring - Done
  
 4. Forms
- - Project: Country Quiz (called Patriot) - Continue from here
+ - Project: Country Quiz (called Patriot) - Continue from here - done
  - Basic Forms in React
  - OnChange Attribute
  - Controlled Inputs

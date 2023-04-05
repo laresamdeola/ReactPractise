@@ -11,6 +11,8 @@ import React, { useState } from "react";
 const Patriot = () => {
     var score = 0;
     const [questionOne, setQuestionOne] = useState("");
+    const [questionTwo, setQuestionTwo] = useState(0);
+    const [questionThree, setQuestionThree] = useState(0);
     
     const handleQuiz = (event) => {
         event.preventDefault();
@@ -21,7 +23,23 @@ const Patriot = () => {
             score = 0;
             console.log("You missed it", score);
         }
+        if(questionTwo == 1960){
+            score += 1;
+        } else {
+            score - 1;
+        }
+        if(questionThree == 36){
+            score += 1;
+        } else {
+            score - 1;
+        }
         console.log(score);
+    }
+    
+    const again = () => {
+        setQuestionOne("");
+        setQuestionTwo(0);
+        setQuestionThree(0);
     }
     
     return (
@@ -35,7 +53,31 @@ const Patriot = () => {
                     value={questionOne}
                     onChange={(event) => setQuestionOne(event.target.value)}
                 />
+                
+                <br />
+                
+                <label>Question 2: What year did Nigeria gain independence?</label>
+                <input 
+                    type="number"
+                    required
+                    name="questionTwo"
+                    value={questionTwo}
+                    onChange={(event) => setQuestionTwo(event.target.value)}
+                />
+                
+                <br />
+                
+                <label>Question 3: How many states are in Nigeria?</label>
+                <input 
+                    type="number"
+                    required
+                    name="questionThree"
+                    value={questionThree}
+                    onChange={(event) => setQuestionThree(event.target.value)}
+                />
+                <br />
                 <button type="submit">Finish</button>
+                <button onClick={() => again()}>Again</button>
             </form>
         </>
     );
