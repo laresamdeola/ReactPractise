@@ -13,6 +13,7 @@ const Patriot = () => {
     const [questionOne, setQuestionOne] = useState("");
     const [questionTwo, setQuestionTwo] = useState(0);
     const [questionThree, setQuestionThree] = useState(0);
+    const [questionFour, setQuestionFour] = useState(0);
     
     const handleQuiz = (event) => {
         event.preventDefault();
@@ -33,6 +34,11 @@ const Patriot = () => {
         } else {
             score - 1;
         }
+        if(questionFour == 6){
+            score += 1;
+        } else {
+            score - 1;
+        }
         console.log(score);
     }
     
@@ -40,7 +46,11 @@ const Patriot = () => {
         setQuestionOne("");
         setQuestionTwo(0);
         setQuestionThree(0);
+        setQuestionFour(0);
     }
+    
+    // set a state variable for the autocomplete attribute
+    // to be off if they missed a question or to be off totally.
     
     return (
         <>
@@ -52,6 +62,7 @@ const Patriot = () => {
                     name="questionOne"
                     value={questionOne}
                     onChange={(event) => setQuestionOne(event.target.value)}
+                    autoComplete="off"
                 />
                 
                 <br />
@@ -63,6 +74,7 @@ const Patriot = () => {
                     name="questionTwo"
                     value={questionTwo}
                     onChange={(event) => setQuestionTwo(event.target.value)}
+                    autoComplete="off"
                 />
                 
                 <br />
@@ -74,6 +86,18 @@ const Patriot = () => {
                     name="questionThree"
                     value={questionThree}
                     onChange={(event) => setQuestionThree(event.target.value)}
+                    autoComplete="off"
+                />
+                <br />
+                
+                <label>Question 4: How many geo-political zones are in Nigeria?</label>
+                <input 
+                    type="number"
+                    required
+                    name="questionFour"
+                    value={questionFour}
+                    onChange={(event) => setQuestionFour(event.target.value)}
+                    autoComplete="off"
                 />
                 <br />
                 <button type="submit">Finish</button>
