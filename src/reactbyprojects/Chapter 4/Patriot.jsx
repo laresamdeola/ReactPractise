@@ -10,10 +10,12 @@ import React, { useState } from "react";
 
 const Patriot = () => {
     var score = 0;
+    const [quizScore, setQuizScore] = useState(score);
     const [questionOne, setQuestionOne] = useState("");
     const [questionTwo, setQuestionTwo] = useState(0);
     const [questionThree, setQuestionThree] = useState(0);
     const [questionFour, setQuestionFour] = useState(0);
+    const [isQuizFinish, setIsQuizFinish] = useState(false);
     
     const handleQuiz = (event) => {
         event.preventDefault();
@@ -22,24 +24,27 @@ const Patriot = () => {
             console.log("You got it");
         } else {
             score = 0;
-            console.log("You missed it", score);
+            //console.log("You missed it", score);
         }
         if(questionTwo == 1960){
             score += 1;
         } else {
-            score - 1;
+            score -= 1;
         }
         if(questionThree == 36){
             score += 1;
         } else {
-            score - 1;
+            score -= 1;
         }
         if(questionFour == 6){
             score += 1;
         } else {
-            score - 1;
+            score -= 1;
         }
+        //setScore(score);
         console.log(score);
+        setIsQuizFinish(true);
+        setQuizScore(score);
     }
     
     const again = () => {
@@ -48,6 +53,11 @@ const Patriot = () => {
         setQuestionThree(0);
         setQuestionFour(0);
     }
+    
+    const QuizScore = () => {
+        return <h1>Congratulations, your score is: {quizScore}</h1>
+    }
+        
     
     // set a state variable for the autocomplete attribute
     // to be off if they missed a question or to be off totally.
@@ -103,6 +113,7 @@ const Patriot = () => {
                 <button type="submit">Finish</button>
                 <button onClick={() => again()}>Again</button>
             </form>
+            {isQuizFinish && <QuizScore />}
         </>
     );
 }
