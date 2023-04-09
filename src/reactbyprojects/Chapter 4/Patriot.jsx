@@ -58,7 +58,7 @@ const Patriot = () => {
         return <h1>Congratulations, your score is: {quizScore}</h1>
     }
         
-    
+    // one more question
     // set a state variable for the autocomplete attribute
     // to be off if they missed a question or to be off totally.
     
