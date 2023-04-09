@@ -1,0 +1,79 @@
+h2 {
+    margin-left: 6.8%;
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+/* Color Change */
+.hover-color:hover {
+    color: red;
+}
+
+/* Text Shadow */
+.hover-shadow:hover {
+    text-shadow: 2px 2px red;
+}
+
+/* Letter Spacing */
+.hover-letter-spacing:hover {
+    letter-spacing: 2px;
+}
+
+/* Text Slant */
+.hover-slant:hover {
+    font-style: italic;
+}
+
+/* Text UpperCase */
+.hover-uppercase:hover {
+    text-transform: uppercase;
+}
+
+/* Text LowerCase */
+.hover-lowercase:hover {
+    text-transform: lowercase;
+}
+
+/* Text Capital Case */
+.hover-capitalize:hover {
+    text-transform: capitalize;
+}
+
+/* Text Translate */
+.hover-translate:hover {
+    transform: translate(20px, 0px);
+}
+
+/* Text Rotate */
+.hover-rotate:hover {
+    transform: rotate(2deg);
+}
+
+/* Text Size Medium */
+.hover-text-medium:hover {
+    font-size: 12px;
+}
+
+/* Text Size Large */
+.hover-text-large:hover {
+    font-size: 30px;
+}
+
+/* Text Size Extra Large */
+.hover-text-extra-large:hover {
+    font-size: 36px;
+}
+
+/* Font Weight, Linear Gradient  */
+
+.list-elements li {
+    text-align: center;
+    display: inline-block;
+    width: 5%;
+    height: 20px;
+    font-size: 24px;
+    padding-right: 20%;
+    padding-bottom: 15%;
+    /*border: 2px solid black;*/
+    margin: 2%;
+}
