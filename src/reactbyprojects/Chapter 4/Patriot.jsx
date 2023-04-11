@@ -1,6 +1,6 @@
 // 1. A Quiz Website of ten questions
 // 2. the questions would be in a form
-// 3. Create a Score State that updates as one either answers
+// 3. Create a Score Variable that updates as one either answers
 // correctly or incorrectly
 // 4. Display this Score state to the user when the quiz is over
 // 5. One can display an alert also
@@ -10,6 +10,9 @@ import React, { useState } from "react";
 
 const Patriot = () => {
     var score = 0;
+    var amountOfQuestions = 4;
+    var message = "";
+    
     const [quizScore, setQuizScore] = useState(score);
     const [questionOne, setQuestionOne] = useState("");
     const [questionTwo, setQuestionTwo] = useState(0);
@@ -64,6 +67,7 @@ const Patriot = () => {
     
     return (
         <>
+            <h3>Patriot</h3>
             <form onSubmit={handleQuiz}>
                 <label>Question 1: What is the capital of Nigeria?</label>
                 <input 
