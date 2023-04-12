@@ -25,9 +25,9 @@
 4. Forms
  - Project: Country Quiz (called Patriot) - Continue from here - done
  - Basic Forms in React - done
- - OnChange Attribute
- - Controlled Inputs
- - Uncontrolled Inputs
+ - OnChange Attribute - done
+ - Controlled Inputs - done
+ - Uncontrolled Inputs - done
  
 5. Adding Functionality III - Save the score in a txt file
  - Import Statement
