@@ -29,20 +29,20 @@
  - Controlled Inputs - done
  - Uncontrolled Inputs - done
  
-5. Adding Functionality III - Save the score in a txt file
+5. Adding Functionality III - come back to this section.
  - Import Statement
  - Export Statement - Default & Named Export
  - Making your React Code Modular
  
-6. Random Pet Names Generator Site
- - Components Again
- - Modular Code Again
- - Import & Export Statement Again
- - Introduction to Hooks
- - useState Hook - Array
- - useState Hook - Object
- - useState Hook - Multiple State Values
- - Creating an internal API
+6. Random Pet Names Generator Site - done
+ - Components Again - ?
+ - Modular Code Again - ?
+ - Import & Export Statement Again - ?
+ - Introduction to Hooks - ?
+ - useState Hook - Array - done
+ - useState Hook - Object - ?
+ - useState Hook - Multiple State Values - ?
+ - Creating an internal API - ?
  - Introduction to Higher Order Functions
    - map()
    - filter()
