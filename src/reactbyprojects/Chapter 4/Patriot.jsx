@@ -6,6 +6,8 @@
 // 5. One can display an alert also
 // 6. Save the score in a txt file
 
+// Controlled Inputs & onChange Attribute.
+
 import React, { useState } from "react";
 
 const Patriot = () => {
@@ -14,6 +16,7 @@ const Patriot = () => {
     var message = "";
     
     const [quizScore, setQuizScore] = useState(score);
+    //const [message, setMessage] = useState("Hello");
     const [questionOne, setQuestionOne] = useState("");
     const [questionTwo, setQuestionTwo] = useState(0);
     const [questionThree, setQuestionThree] = useState(0);
@@ -26,23 +29,23 @@ const Patriot = () => {
             score += 1;
             console.log("You got it");
         } else {
-            score = 0;
+            score += 0;
             //console.log("You missed it", score);
         }
         if(questionTwo == 1960){
             score += 1;
         } else {
-            score -= 1;
+            score += 0;
         }
         if(questionThree == 36){
             score += 1;
         } else {
-            score -= 1;
+            score += 0;
         }
         if(questionFour == 6){
             score += 1;
         } else {
-            score -= 1;
+            score += 0;
         }
         //setScore(score);
         console.log(score);
@@ -50,15 +53,38 @@ const Patriot = () => {
         setQuizScore(score);
     }
     
+    const QuizScore = () => {
+        QuizMessage();
+        return <h3>{message} : {quizScore}</h3>
+    }
+    
+    const QuizMessage = () => {
+        switch(quizScore){
+            case  0:
+            case 1:
+                message = "You did not do well";
+                break;
+            case 2:
+                message = "You tried a bit";
+                break;
+            case 3:
+                message = "You were close to being a Patriot";
+                break;
+            case 4:
+                message = "You are a bonafide Patriot";
+                break;
+            default:
+                message = "";       
+        }
+        return message;
+    }
+    
     const again = () => {
         setQuestionOne("");
         setQuestionTwo(0);
         setQuestionThree(0);
         setQuestionFour(0);
-    }
-    
-    const QuizScore = () => {
-        return <h1>Congratulations, your score is: {quizScore}</h1>
+        setIsQuizFinish(false);
     }
         
     // one more question

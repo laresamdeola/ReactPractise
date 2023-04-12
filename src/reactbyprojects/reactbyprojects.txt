@@ -24,7 +24,7 @@
  
 4. Forms
  - Project: Country Quiz (called Patriot) - Continue from here - done
- - Basic Forms in React
+ - Basic Forms in React - done
  - OnChange Attribute
  - Controlled Inputs
  - Uncontrolled Inputs
