@@ -35,20 +35,20 @@
  - Making your React Code Modular
  
 6. Random Pet Names Generator Site - done
- - Components Again - ?
- - Modular Code Again - ?
- - Import & Export Statement Again - ?
- - Introduction to Hooks - ?
+ - Components Again - ? - done
+ - Modular Code Again - ? - done
+ - Import & Export Statement Again - ? - done
+ - Introduction to Hooks - ? - done
  - useState Hook - Array - done
- - useState Hook - Object - ?
- - useState Hook - Multiple State Values - ?
- - Creating an internal API - ?
  - Introduction to Higher Order Functions
    - map()
    - filter()
    - reduce()
    - find()
    - findIndex()
+ - useState Hook - Object - ? -
+ - useState Hook - Multiple State Values - ?
+ - Creating an internal API - ?
  - Fetching data from the internal API
   
 7. Pets Needing Shelter
