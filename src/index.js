@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import PetName from "./reactbyprojects/Chapter 6/PetName";
+import { ForexGuy } from "./reactbyprojects/Chapter 7/ForexGuy";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<PetName />);
+root.render(<ForexGuy />);

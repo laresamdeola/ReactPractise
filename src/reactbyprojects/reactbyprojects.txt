@@ -41,17 +41,17 @@
  - Introduction to Hooks - ? - done
  - useState Hook - Array - done
  - Introduction to Higher Order Functions
-   - map()
-   - filter()
-   - reduce()
-   - find()
-   - findIndex()
- - useState Hook - Object - ? -
- - useState Hook - Multiple State Values - ?
- - Creating an internal API - ?
- - Fetching data from the internal API
+   - map() - Project : Random Seven Lines of Poetry
+   - filter() - done
+   - reduce() - done
+   - find() - done
+   - findIndex() - done
+ - useState Hook - Object - ? - done
+ - useState Hook - Multiple State Values - done
+ - Creating an internal API - ? - WonderKind API - done
+ - Fetching data from the internal API - done
   
-7. Pets Needing Shelter
+7. ForexGuy - Currency Rates based on US Dollar - done
  - Introduction to Hooks II
   - useEffect()
   - Basics of useEffect()
@@ -60,7 +60,7 @@
   - Fetching Data with useEffect()
   - Handling Null State gracefully
   
-8. News Site
+8. News Site - i've also done this with the New Yorker API but may use a different API
  - Combining different Hooks
  - useState() for dynamic variables
  - useEffect() for side effects or concurrent operations
