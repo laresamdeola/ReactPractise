@@ -61,13 +61,14 @@
   - Handling Null State gracefully - done
   
 8. News Site - i've also done this with the New Yorker API but may use a different API
- - Combining different Hooks
- - useState() for dynamic variables
- - useEffect() for side effects or concurrent operations
- - Ternary Operator for Conditional Redering I
- - Ternary Operator for Conditional Rendering II
- - Introduction to Short Circuit Evaluation
- - Showing/Hiding User Interface Elements
+ - HomePage - using the mediastack News API - done
+ - Combining different Hooks - done
+ - useState() for dynamic variables - done
+ - useEffect() for side effects or concurrent operations - done
+ - Ternary Operator for Conditional Redering I - done
+ - Ternary Operator for Conditional Rendering II - done
+ - Introduction to Short Circuit Evaluation - done
+ - Showing/Hiding User Interface Elements - done
  
 9. Love Names Site - building your API
 10. Cryptocurrency Latest Price.

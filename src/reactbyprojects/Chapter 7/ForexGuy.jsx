@@ -10,7 +10,7 @@ const ForexGuy = () => {
     const url = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json"
     
     const fetchCurrency = async() => {
-        const data = await fetch(url, { "Access-Control-Allow-Origin": "no-cors" });
+        const data = await fetch(url, { mode: "no-cors" });
         const dataJson = await data.json();
         setCurrencyRate(dataJson);
         setFetched(true);
