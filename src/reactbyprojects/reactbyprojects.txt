@@ -53,12 +53,12 @@
   
 7. ForexGuy - Currency Rates based on US Dollar - done
  - Introduction to Hooks II
-  - useEffect()
-  - Basics of useEffect()
-  - useEffect() Conditional
-  - useEffect() Dependency List
-  - Fetching Data with useEffect()
-  - Handling Null State gracefully
+  - useEffect() - 
+  - Basics of useEffect() - done 
+  - useEffect() Conditional - done 
+  - useEffect() Dependency List & Array - done  
+  - Fetching Data with useEffect() - done
+  - Handling Null State gracefully - done
   
 8. News Site - i've also done this with the New Yorker API but may use a different API
  - Combining different Hooks
