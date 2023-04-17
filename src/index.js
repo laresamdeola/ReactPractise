@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Patriot } from "./reactbyprojects/Chapter 4/Patriot";
+import { PartyInvite } from "./reactbyprojects/Chapter 9/PartyInvite";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<Patriot />);
+root.render(<PartyInvite />);

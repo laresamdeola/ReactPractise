@@ -6,43 +6,43 @@
 // 5. One can display an alert also
 // 6. Save the score in a txt file
 
-// Controlled Inputs & onChange Attribute.
+// Uncontrolled Inputs.
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
-const Patriot = () => {
+const Patriot2 = () => {
     var score = 0;
     var amountOfQuestions = 4;
     var message = "";
     
+    const questionOneRef = useRef("");
+    const questionTwoRef = useRef(0);
+    const questionThreeRef = useRef(0);
+    const questionFourRef = useRef(0);
+    
     const [quizScore, setQuizScore] = useState(score);
-    //const [message, setMessage] = useState("Hello");
-    const [questionOne, setQuestionOne] = useState("");
-    const [questionTwo, setQuestionTwo] = useState(0);
-    const [questionThree, setQuestionThree] = useState(0);
-    const [questionFour, setQuestionFour] = useState(0);
     const [isQuizFinish, setIsQuizFinish] = useState(false);
     
     const handleQuiz = (event) => {
         event.preventDefault();
-        if(questionOne.toLowerCase() == "abuja"){
+        if(questionOneRef.current.value.toLowerCase() == "abuja"){
             score += 1;
             console.log("You got it");
         } else {
             score += 0;
             //console.log("You missed it", score);
         }
-        if(questionTwo == 1960){
+        if(questionTwoRef.current.value == 1960){
             score += 1;
         } else {
             score += 0;
         }
-        if(questionThree == 36){
+        if(questionThreeRef.current.value == 36){
             score += 1;
         } else {
             score += 0;
         }
-        if(questionFour == 6){
+        if(questionFourRef.current.value == 6){
             score += 1;
         } else {
             score += 0;
@@ -80,10 +80,10 @@ const Patriot = () => {
     }
     
     const again = () => {
-        setQuestionOne("");
-        setQuestionTwo(0);
-        setQuestionThree(0);
-        setQuestionFour(0);
+        questionOneRef.current.value = "";
+        questionTwoRef.current.value = 0;
+        questionThreeRef.current.value = 0;
+        questionFourRef.current.value = 0;
         setIsQuizFinish(false);
     }
         
@@ -93,15 +93,14 @@ const Patriot = () => {
     
     return (
         <>
-            <h3>Patriot</h3>
+            <h3>Patriot2</h3>
             <form onSubmit={handleQuiz}>
                 <label>Question 1: What is the capital of Nigeria?</label>
                 <input 
                     type="text"
                     required
                     name="questionOne"
-                    value={questionOne}
-                    onChange={(event) => setQuestionOne(event.target.value)}
+                    ref={questionOneRef}
                     autoComplete="off"
                 />
                 
@@ -112,8 +111,7 @@ const Patriot = () => {
                     type="number"
                     required
                     name="questionTwo"
-                    value={questionTwo}
-                    onChange={(event) => setQuestionTwo(event.target.value)}
+                    ref={questionTwoRef}
                     autoComplete="off"
                 />
                 
@@ -124,8 +122,7 @@ const Patriot = () => {
                     type="number"
                     required
                     name="questionThree"
-                    value={questionThree}
-                    onChange={(event) => setQuestionThree(event.target.value)}
+                    ref={questionThreeRef}
                     autoComplete="off"
                 />
                 <br />
@@ -135,8 +132,7 @@ const Patriot = () => {
                     type="number"
                     required
                     name="questionFour"
-                    value={questionFour}
-                    onChange={(event) => setQuestionFour(event.target.value)}
+                    ref={questionFourRef}
                     autoComplete="off"
                 />
                 <br />
@@ -148,4 +144,4 @@ const Patriot = () => {
     );
 }
 
-export { Patriot };
+export { Patriot2 };

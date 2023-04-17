@@ -24,52 +24,79 @@
  
 4. Forms
  - Project: Country Quiz (called Patriot) - Continue from here - done
- - Basic Forms in React
- - OnChange Attribute
- - Controlled Inputs
- - Uncontrolled Inputs
+ - Basic Forms in React - done
+ - OnChange Attribute - done
+ - Controlled Inputs - done
+ - Uncontrolled Inputs - done
  
-5. Adding Functionality III - Save the score in a txt file
+5. Adding Functionality III - come back to this section.
  - Import Statement
  - Export Statement - Default & Named Export
  - Making your React Code Modular
  
-6. Random Pet Names Generator Site
- - Components Again
- - Modular Code Again
- - Import & Export Statement Again
- - Introduction to Hooks
- - useState Hook - Array
- - useState Hook - Object
- - useState Hook - Multiple State Values
- - Creating an internal API
+6. Random Pet Names Generator Site - done
+ - Components Again - ? - done
+ - Modular Code Again - ? - done
+ - Import & Export Statement Again - ? - done
+ - Introduction to Hooks - ? - done
+ - useState Hook - Array - done
  - Introduction to Higher Order Functions
-   - map()
-   - filter()
-   - reduce()
-   - find()
-   - findIndex()
- - Fetching data from the internal API
+   - map() - Project : Random Seven Lines of Poetry
+   - filter() - done
+   - reduce() - done
+   - find() - done
+   - findIndex() - done
+ - useState Hook - Object - ? - done
+ - useState Hook - Multiple State Values - done
+ - Creating an internal API - ? - WonderKind API - done
+ - Fetching data from the internal API - done
   
-7. Pets Needing Shelter
+7. ForexGuy - Currency Rates based on US Dollar - done
  - Introduction to Hooks II
-  - useEffect()
-  - Basics of useEffect()
-  - useEffect() Conditional
-  - useEffect() Dependency List
-  - Fetching Data with useEffect()
-  - Handling Null State gracefully
+  - useEffect() - 
+  - Basics of useEffect() - done 
+  - useEffect() Conditional - done 
+  - useEffect() Dependency List & Array - done  
+  - Fetching Data with useEffect() - done
+  - Handling Null State gracefully - done
   
-8. News Site
- - Combining different Hooks
- - useState() for dynamic variables
- - useEffect() for side effects or concurrent operations
- - Ternary Operator for Conditional Redering I
- - Ternary Operator for Conditional Rendering II
- - Introduction to Short Circuit Evaluation
- - Showing/Hiding User Interface Elements
+8. News Site - i've also done this with the New Yorker API but may use a different API
+ - HomePage - using the mediastack News API - done
+ - Combining different Hooks - done
+ - useState() for dynamic variables - done
+ - useEffect() for side effects or concurrent operations - done
+ - Ternary Operator for Conditional Redering I - done
+ - Ternary Operator for Conditional Rendering II - done
+ - Introduction to Short Circuit Evaluation - done
+ - Showing/Hiding User Interface Elements - done
  
-9. Love Names Site - building your API
+9. Love Names Site - building your API - I'm here - start writing the scheme of work
+ - Introduction to useReducer() - PartyInvite - Add Guests - done
+ - Introduction to useReducer() II- Delete Guests
+ - Introduction to useReducer() III- Clear Guests
+ - Introduction to useReducer() IV- Update Guests
+ - Added Functionality - Modal 
+ - Checking for Errors in the State Values using Control Flow
+ - Converting Multiple State Values to a single state value using useReducer()
+ - A project on useReducer() or rather converting one of the previous projects using 
+ - Introduction to Prop Drilling
+ - Example of Prop Drilling
+ - A project on Prop Drilling
 10. Cryptocurrency Latest Price.
+ - Introduction to useContext()
+ - A project on useContext
+ - Custom Hooks
+ - A project on Custom Hooks
 11. Language Translator Site
-12. 
+ - PropTypes - Introduction
+ - PropTypes with Images
+ - PropTypes Default Values
+12. Introduction React Router
+    - React Router - Error & Switch Components
+    - React Router - Links
+    - React Router - URL Params and Placeholder
+    - React Optimization
+    - React memo
+    - useCallback()
+    - useMemo
+13. Redux
