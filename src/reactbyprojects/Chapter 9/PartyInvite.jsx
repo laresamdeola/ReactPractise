@@ -27,10 +27,34 @@ const PartyInvite = () => {
             }
         }
         
+        if(action.type === "REMOVE_GUEST"){
+            var filteredGuest = state.guests.filter((guest) => guest.id !== action.payload);
+            return {
+                ...state,
+                guests: filteredGuest,
+                isModalOpen: true,
+                message: "Guest Removed"
+            };
+        }
+        
+        if(action.type === "CLEAR_FORM") {
+            return {
+                ...state,
+                guests: [],
+                isModalOpen: false,
+                message: "All Guests deleted"
+            }
+        }
+        
         return state;
     }
     
     const [state, dispatch] = useReducer(reducer, defaultItems);
+    
+    const resetStateValues = () => {
+        setName("");
+        setNationality("");
+    }
     
     const handleGuests = (event) => {
         event.preventDefault();
@@ -40,7 +64,11 @@ const PartyInvite = () => {
             nationality
         }
         dispatch({type: "ADD_GUEST", payload: newGuest});
+        console.log(newGuest.id);
+        resetStateValues();
     }
+    
+    console.log(state.message);
     
     return (
         <div>
@@ -68,6 +96,8 @@ const PartyInvite = () => {
                 />
                 <br />
                 <button type="submit">Add</button>
+                <br />
+                <button onClick={() => dispatch({type: "CLEAR_FORM"})}>Clear</button>
             </form>
             {state.guests.map((guest) => {
                 const {id, name, nationality} = guest;
@@ -75,6 +105,7 @@ const PartyInvite = () => {
                     <section key={id}>
                         <h4>{name}</h4>
                         <h5>{nationality}</h5>
+                        <button onClick={() => dispatch({type: "REMOVE_GUEST", payload: id})}>Remove</button>
                     </section>
                 );
             })}

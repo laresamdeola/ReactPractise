@@ -72,16 +72,16 @@
  
 9. Love Names Site - building your API - I'm here - start writing the scheme of work
  - Introduction to useReducer() - PartyInvite - Add Guests - done
- - Introduction to useReducer() II- Delete Guests
- - Introduction to useReducer() III- Clear Guests
- - Introduction to useReducer() IV- Update Guests
- - Added Functionality - Modal 
- - Checking for Errors in the State Values using Control Flow
- - Converting Multiple State Values to a single state value using useReducer()
- - A project on useReducer() or rather converting one of the previous projects using 
- - Introduction to Prop Drilling
+ - Introduction to useReducer() II- Delete Guests - to do - done 
+ - Introduction to useReducer() III- Clear Guests - to do - done
  - Example of Prop Drilling
  - A project on Prop Drilling
+ - Added Functionality - Modal - to do 
+ - Checking for Errors in the State Values using Control Flow - to do 
+ - Converting Multiple State Values to a single state value using useReducer() - to do 
+ - A project on useReducer() or rather converting one of the previous projects using - to do 
+ - Introduction to Prop Drilling
+
 10. Cryptocurrency Latest Price.
  - Introduction to useContext()
  - A project on useContext
