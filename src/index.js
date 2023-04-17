@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { HomePage } from "./reactbyprojects/Chapter 8/HomePage";
+import { PartyInvite } from "./reactbyprojects/Chapter 9/PartyInvite";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<HomePage />);
+root.render(<PartyInvite />);

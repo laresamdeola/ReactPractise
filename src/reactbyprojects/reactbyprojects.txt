@@ -71,12 +71,14 @@
  - Showing/Hiding User Interface Elements - done
  
 9. Love Names Site - building your API - I'm here - start writing the scheme of work
- - Introduction to useReducer()
- - More on useReducer()
+ - Introduction to useReducer() - PartyInvite - Add Guests - done
+ - Introduction to useReducer() II- Delete Guests
+ - Introduction to useReducer() III- Clear Guests
+ - Introduction to useReducer() IV- Update Guests
+ - Added Functionality - Modal 
+ - Checking for Errors in the State Values using Control Flow
+ - Converting Multiple State Values to a single state value using useReducer()
  - A project on useReducer() or rather converting one of the previous projects using 
- - useReducer()
- - useReducer() - Add an Item
- - useReducer() - remove an item using the filter()
  - Introduction to Prop Drilling
  - Example of Prop Drilling
  - A project on Prop Drilling
