@@ -1,4 +1,6 @@
 // 1. Live News SPA
+// 2. It can be further advanced by creating a form whereby you can choose a category 
+// of news to search for - I could add this added functionality.
 
 import React, { useState, useEffect } from "react";
 import { apiKey } from "./options";
@@ -7,7 +9,7 @@ const HomePage = () => {
     const [news, setNews] = useState([]);
     const [fetched, setFetched] = useState(false);
     const topic = "politics"
-    const url = `https://api.currentsapi.services/v1/search?languages=us&apiKey=${apiKey}`;
+    const url = `https://api.currentsapi.services/v1/latest-news?languages=us&category=${topic}&apiKey=${apiKey}`;
     const defaultApiImage = "https://static.arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png";
     
     const Loading = () => {
@@ -30,7 +32,7 @@ const HomePage = () => {
     
     return (
         <div>
-            <h4>HomePage</h4>
+            <h3>HomePage</h3>
             {fetched ? news.map((info) => {
                 const { author, id, image, category, title, url, published, description } = info;
                 const [category1, category2] = category;

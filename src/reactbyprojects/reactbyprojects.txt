@@ -70,7 +70,31 @@
  - Introduction to Short Circuit Evaluation - done
  - Showing/Hiding User Interface Elements - done
  
-9. Love Names Site - building your API
+9. Love Names Site - building your API - I'm here - start writing the scheme of work
+ - Introduction to useReducer()
+ - More on useReducer()
+ - A project on useReducer() or rather converting one of the previous projects using 
+ - useReducer()
+ - useReducer() - Add an Item
+ - useReducer() - remove an item using the filter()
+ - Introduction to Prop Drilling
+ - Example of Prop Drilling
+ - A project on Prop Drilling
 10. Cryptocurrency Latest Price.
+ - Introduction to useContext()
+ - A project on useContext
+ - Custom Hooks
+ - A project on Custom Hooks
 11. Language Translator Site
-12. 
+ - PropTypes - Introduction
+ - PropTypes with Images
+ - PropTypes Default Values
+12. Introduction React Router
+    - React Router - Error & Switch Components
+    - React Router - Links
+    - React Router - URL Params and Placeholder
+    - React Optimization
+    - React memo
+    - useCallback()
+    - useMemo
+13. Redux
