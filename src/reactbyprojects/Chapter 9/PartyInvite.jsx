@@ -7,78 +7,101 @@
 import React, { useState, useReducer } from "react";
 
 const PartyInvite = () => {
-    const [name, setName] = useState("");
-    const [nationality, setNationality] = useState("");
+    const [guest, setGuest] = useState({
+        guestName: "",
+        guestNationality: ""
+    });
     
-    const defaultItems = {
-        guests: [],
-        isModalOpen: false,
-        message: ""
-    }
+    const defaultGuests = {
+        guestsGroup: [],
+        isGuestModalOpen: false,
+        guestMessage: ""
+    };
     
     const reducer = (state, action) => {
         if(action.type === "ADD_GUEST"){
-            const newGuests = [...state.guests, action.payload];
+            const newGuests = [...state.guestsGroup, action.payload];
             return {
                 ...state,
-                guests: newGuests,
-                isModalOpen: true,
-                message: "New Guest Added"
+                guestsGroup: newGuests,
+                isGuestModalOpen: true,
+                guestMessage: `${guestName} has been added`
             }
         }
-        
+        if(action.type === "REMOVE_GUEST"){
+            const filtered_guest = state.guestsGroup.filter((guest) => guest.id !== action.payload);
+            return {
+                ...state,
+                guestsGroup: filtered_guest,
+                isGuestModalOpen: true,
+                guestMessage: ""
+            }
+        }
         return state;
     }
     
-    const [state, dispatch] = useReducer(reducer, defaultItems);
+    const [state, dispatch] = useReducer(reducer, defaultGuests);
+    
+    const {guestName, guestNationality} = guest;
     
     const handleGuests = (event) => {
         event.preventDefault();
         const newGuest = {
             id: new Date().getTime().toString(),
-            name,
-            nationality
-        }
+            guestName,
+            guestNationality
+        };
         dispatch({type: "ADD_GUEST", payload: newGuest});
+        console.log("New Guest Added");
+        setGuest({
+            guestName: "",
+            guestNationality: ""
+        });
     }
     
+    
     return (
-        <div>
+        <>
             <form onSubmit={handleGuests}>
-                <label htmlFor="name">Invited Guest Name: </label>
+                <label htmlFor="guestName">Invited Guest Name: </label>
                 <br />
                 <input 
                     type="text"
-                    id="name"
-                    name="name"
-                    value={name}
-                    required
-                    onChange={(event) => setName(event.target.value)}
+                    name="guestName"
+                    id="guestName"
+                    value={guestName}
+                    onChange={(event) => setGuest({
+                        ...guest,
+                        guestName: event.target.value})}
                 />
                 <br />
-                <label htmlFor="nationality">Invited Guest Nationality: </label>
+                <label htmlFor="guestNationality">Invited Guest Nationality: </label>
                 <br />
                 <input 
                     type="text"
-                    id="nationality"
-                    name="nationality"
-                    value={nationality}
-                    required
-                    onChange={(event) => setNationality(event.target.value)}
+                    name="guestNationality"
+                    id="guestNationality"
+                    value={guestNationality}
+                    onChange={(event) => setGuest({...guest,
+                    guestNationality: event.target.value})}
                 />
                 <br />
                 <button type="submit">Add</button>
-            </form>
-            {state.guests.map((guest) => {
-                const {id, name, nationality} = guest;
-                return (
-                    <section key={id}>
-                        <h4>{name}</h4>
-                        <h5>{nationality}</h5>
-                    </section>
-                );
-            })}
-        </div>
+             </form>
+             {state.guestsGroup.map((guestMember) => {
+                 const {id, guestName, guestNationality} = guestMember;
+                 return (
+                     <div key={id}>
+                         <h3>{guestName}</h3>
+                         <h4>{guestNationality}</h4>
+                         <button onClick={() => dispatch({
+                             type: "REMOVE_GUEST",
+                             payload: id
+                         })}>Remove</button>
+                     </div>
+                 )
+             })}
+        </>
     );
 }
 

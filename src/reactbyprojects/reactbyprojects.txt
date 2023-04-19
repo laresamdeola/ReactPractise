@@ -76,6 +76,7 @@
  - Introduction to useReducer() III- Clear Guests
  - Introduction to useReducer() IV- Update Guests
  - Added Functionality - Modal 
+ - Introduction to the Rest/Spread Operator
  - Checking for Errors in the State Values using Control Flow
  - Converting Multiple State Values to a single state value using useReducer()
  - A project on useReducer() or rather converting one of the previous projects using 
