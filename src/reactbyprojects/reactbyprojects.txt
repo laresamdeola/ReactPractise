@@ -75,11 +75,11 @@
  - Introduction to useReducer() II- Delete Guests
  - Introduction to useReducer() III- Clear Guests
  - Introduction to useReducer() IV- Update Guests
- - Added Functionality - Modal 
- - Checking for Errors in the State Values using Control Flow
- - Converting Multiple State Values to a single state value using useReducer()
- - A project on useReducer() or rather converting one of the previous projects using 
+ - Checking for Errors in the State Values using Control Flow - done
+ - Converting Multiple State Values to a single state value using useReducer() - done
+ - A project on useReducer() or rather converting one of the previous projects using useReducer()
  - Introduction to Prop Drilling
+ - Added Functionality - Modal 
  - Example of Prop Drilling
  - A project on Prop Drilling
 10. Cryptocurrency Latest Price.
