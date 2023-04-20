@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-const PartyModal = ({isModalOpen}) => {
+const PartyModal = ({message}) => {
+    var text = "";
+    if(message === "New Guest Added"){
+        text = "Hello Guest";
+    }
+    console.log(text);
     return (
-        <h1>{isModalOpen && console.log("Hello World!")}k</h1>
+        <h1>Party Modal</h1>
     );
 }
 

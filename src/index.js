@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { PartyInvite } from "./reactbyprojects/Chapter 9/PartyInvite";
+import { PropDrilling } from "./reactbyprojects/Chapter 9/PropDrilling";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<PartyInvite />);
+root.render(<PropDrilling />);

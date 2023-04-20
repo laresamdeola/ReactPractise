@@ -125,7 +125,7 @@ const PartyInvite = () => {
             })}
             <br />
             {state.clear && <ClearButton />}
-            {state.isModalOpen && <PartyModal isModalOpen={state.isModalOpen} />}
+            {state.isModalOpen && <PartyModal message={state.message} />}
         </div>
     );
 }

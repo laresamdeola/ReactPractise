@@ -78,11 +78,11 @@
  - Checking for Errors in the State Values using Control Flow - done
  - Converting Multiple State Values to a single state value using useReducer() - done
  - A project on useReducer() or rather converting one of the previous projects using useReducer()
- - Introduction to Prop Drilling
- - Added Functionality - Modal 
- - Example of Prop Drilling
- - A project on Prop Drilling
-10. Cryptocurrency Latest Price.
+ - Introduction to Prop Drilling - done
+ - Added Functionality - Modal - done
+ - Example of Prop Drilling - done
+ - A project on Prop Drilling - done
+10. Cryptocurrency Latest Price. - i'm here
  - Introduction to useContext()
  - A project on useContext
  - Custom Hooks
