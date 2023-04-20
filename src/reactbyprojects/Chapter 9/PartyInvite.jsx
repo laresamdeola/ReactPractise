@@ -27,6 +27,15 @@ const PartyInvite = () => {
             }
         }
         
+        if(action.type === "CLEAR_GUESTS"){
+            return {
+                ...state,
+                guests: [],
+                isModalOpen: false,
+                message: "All guests have been cleared" 
+            }
+        }
+        
         return state;
     }
     
@@ -40,6 +49,10 @@ const PartyInvite = () => {
             nationality
         }
         dispatch({type: "ADD_GUEST", payload: newGuest});
+    }
+    
+    const ClearButton = () => {
+        return <button onClick={() => dispatch({type: "CLEAR_GUESTS"})}>Clear</button>;
     }
     
     return (
@@ -78,6 +91,7 @@ const PartyInvite = () => {
                     </section>
                 );
             })}
+            {state.guests && <ClearButton />}
         </div>
     );
 }
