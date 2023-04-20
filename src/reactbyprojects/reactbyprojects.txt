@@ -82,15 +82,18 @@
  - Added Functionality - Modal - done
  - Example of Prop Drilling - done
  - A project on Prop Drilling - done
+ 
 10. Cryptocurrency Latest Price. - i'm here
  - Introduction to useContext()
  - A project on useContext
  - Custom Hooks
  - A project on Custom Hooks
+ 
 11. Language Translator Site
  - PropTypes - Introduction
  - PropTypes with Images
  - PropTypes Default Values
+ 
 12. Introduction React Router
     - React Router - Error & Switch Components
     - React Router - Links
@@ -99,4 +102,5 @@
     - React memo
     - useCallback()
     - useMemo
+    
 13. Redux
