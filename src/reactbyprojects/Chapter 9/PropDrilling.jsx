@@ -6,7 +6,7 @@ const PropDrilling = () => {
     
     const PopularityText = ({popularity}) => {
         var popMessage = null;
-        popularity >= 4 ? popMessage = "Popular Item" : null;
+        popularity >= 4 ? popMessage = "Popular Item" : "";
         return (
             <h5>{popMessage}</h5>
         );
