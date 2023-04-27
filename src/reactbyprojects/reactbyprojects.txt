@@ -83,11 +83,11 @@
  - Example of Prop Drilling - done
  - A project on Prop Drilling - done
  
-10. Cryptocurrency Latest Price. - i'm here
- - Introduction to useContext()
- - A project on useContext
- - Custom Hooks
- - A project on Custom Hooks
+10. Cryptocurrency Latest Price. - done 
+ - Introduction to useContext() - done 
+ - A project on useContext - done - CryptoKing!
+ - Custom Hooks - i'm here 
+ - A project on Custom Hooks - i'm here 
  
 11. Language Translator Site
  - PropTypes - Introduction
