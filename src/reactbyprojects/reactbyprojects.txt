@@ -86,10 +86,10 @@
 10. Cryptocurrency Latest Price. - done 
  - Introduction to useContext() - done 
  - A project on useContext - done - CryptoKing!
- - Custom Hooks - i'm here 
- - A project on Custom Hooks - i'm here 
+ - Custom Hooks - done
+ - A project on Custom Hooks - may omit
  
-11. Language Translator Site
+11. Language Translator Site - i'm here
  - PropTypes - Introduction
  - PropTypes with Images
  - PropTypes Default Values
@@ -102,5 +102,6 @@
     - React memo
     - useCallback()
     - useMemo
+    - a project using React Router
     
 13. Redux
