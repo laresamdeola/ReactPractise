@@ -1,6 +1,7 @@
 import React from "react";
 import { useGreeting } from "./useGreeting";
 import { useHeader } from "./useHeader";
+import { useModal } from "./useModal";
 
 const CustomHooks1 = () => {
     const {header, headerTitle} = useHeader("Hello World", "red", "low");
@@ -14,4 +15,9 @@ const CustomHooks2 = () => {
     return <h1>{`${message.greeting}`}</h1>
 }
 
-export { CustomHooks2 };
+const CustomHooks3 = () => {
+    const modal = useModal("ORIGINS", true, "Okay", true, "Close");
+    return modal;
+}
+
+export { CustomHooks3 };
