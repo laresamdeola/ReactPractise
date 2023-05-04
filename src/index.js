@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { CustomHooks3 } from "./reactbyprojects/Chapter 10/CustomHooks1";
+import { Products } from "./reactbyprojects/Chapter 11/Proptypes";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<CustomHooks3 />);
+root.render(<Products />);
