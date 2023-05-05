@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { PropDrilling } from "./reactbyprojects/Chapter 9/PropDrilling";
+import { Products } from "./reactbyprojects/Chapter 11/Proptypes";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(<PropDrilling />);
+root.render(<Products />);

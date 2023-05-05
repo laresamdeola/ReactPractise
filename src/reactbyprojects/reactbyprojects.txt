@@ -83,16 +83,14 @@
  - Example of Prop Drilling - done
  - A project on Prop Drilling - done
  
-10. Cryptocurrency Latest Price. - i'm here
- - Introduction to useContext()
- - A project on useContext
- - Custom Hooks
- - A project on Custom Hooks
+10. Cryptocurrency Latest Price. - done 
+ - Introduction to useContext() - done 
+ - A project on useContext - done - CryptoKing!
+ - Custom Hooks - done
+ - A project on Custom Hooks - may omit
  
-11. Language Translator Site
- - PropTypes - Introduction
- - PropTypes with Images
- - PropTypes Default Values
+11. Language Translator Site - i'm here
+ - Using the Javascript "OR" to handle omitted or absent props
  
 12. Introduction React Router
     - React Router - Error & Switch Components
@@ -102,5 +100,7 @@
     - React memo
     - useCallback()
     - useMemo
+    - a project using React Router
     
 13. Redux
+14. References and Glossary - End.
