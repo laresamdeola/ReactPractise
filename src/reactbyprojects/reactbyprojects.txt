@@ -91,9 +91,6 @@
  
 11. Language Translator Site - i'm here
  - Using the Javascript "OR" to handle omitted or absent props
- - PropTypes - Introduction
- - PropTypes with Images
- - PropTypes Default Values
  
 12. Introduction React Router
     - React Router - Error & Switch Components
