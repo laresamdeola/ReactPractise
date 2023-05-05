@@ -90,7 +90,7 @@
  - A project on Custom Hooks - may omit
  
 11. Language Translator Site - i'm here
- - Using the Javascript "OR" to handle omitted or absent props
+ - Using the Javascript "OR" to handle omitted or absent props - done
  
 12. Introduction React Router
     - React Router - Error & Switch Components
