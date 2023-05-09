@@ -1,4 +1,4 @@
-1. Simple Profile Page - Done
+1. Simple Profile Page - Done..
  - Project - Biography Page
  - JSX
  - DEvelopment Environment
